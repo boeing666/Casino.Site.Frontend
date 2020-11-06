@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "casino-site-frontend"
+    }
+  },
+  "defaultProject": "casino-site-frontend",
+  "cli": {
+    "analytics": false
+  }
 }
