@@ -25,5 +25,11 @@ export class RouletteComponent implements OnInit {
     this.signalrHub.hubConnection.on('JoinRoulette', (data) => {
       console.log(data);
     });
+    this.signalrHub.hubConnection.on('BettingTimeStart', (data) => {
+      console.log(data);
+    });
+    this.signalrHub.hubConnection.on('bettingTimeStart', (data) => {
+      console.log(data);
+    });
   }
 }
