@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import * as signalR from '@aspnet/signalr';
 import {environment} from '../environments/environment';
-import {log} from 'util';
 import {IHttpConnectionOptions} from '@aspnet/signalr';
 
 @Injectable({
@@ -17,6 +16,7 @@ export class SignalrService {
       return localStorage.getItem('token');
     }
   };
+
   public startConnection = () => {
     this.hubConnection = new signalR.HubConnectionBuilder()
       .withUrl(this.url, this.options).build();
